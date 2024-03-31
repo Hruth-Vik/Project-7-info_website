@@ -6,17 +6,17 @@ function ListGroup() {
         'San Francisco',
         'London'
     ];
-    items=[];
-    if(items.length===0)
-    {
-        return <p>this is empty</p>
-    }
+    // items=[];
+    // if(items.length===0)
+    // {
+    //     return <p>this is empty</p>
+    // }
 
     return (
         <>
             <ul className="list-group">
 
-                {items.map(item => <li key={item}>{item}</li>)}
+                {items.map(item => <li key={item} className="list-group-item">{item}</li>)}
 
 
                 {/* <li className="list-group-item">Cras justo odio</li>
